@@ -101,17 +101,16 @@ a {
 }
 
 .bk-half {
-	background: linear-gradient(to bottom, #0a0a0a 0%, #f2f2f2 30%, #ffffff 50%, #ffffff 100%);
+	background: linear-gradient(to bottom, #000000 30%, #ffffff 70%);
 }
 
 .bk-half-reverse {
-	background: linear-gradient(to top, #020101 0%, #ffffff 50%, #ffffff 50%, #ffffff 100%);
+	background: linear-gradient(to top, #413e3e 0%, #adadad 50%);
 }
 
 .flex {
 	display: flex;
 	justify-content: space-between;
-  height: ;
 }
 
 .flex-box {
@@ -121,12 +120,15 @@ a {
 /* Header */
 .mainheader {
 	height: 100vh;
+  
 }
 
 /* Navbar */
 #navbar {
 	height: 80px;
 	background: #080707;
+  position: fixed;
+  width: 100%;
 }
 
 #navbar .logo img {
@@ -160,13 +162,14 @@ a {
 
 /* Showcase */
 #showcase img {
-	height: 320px;
+	height: 350px;
 	border-radius: .5rem;
 	border: 8px solid #2792e9;
-	-webkit-border-radius: .5re;
+	-webkit-border-radius: 50%;
 	-moz-border-radius: .5re;
 	-ms-border-radius: .5re;
 	-o-border-radius: .5re;
+  margin-top: 50px;
 }
 
 /* About */
@@ -200,15 +203,20 @@ a {
 
 /* Footer */
 #mainfooter {
-	background: #050505;
-	padding: 30px;
+	background-color: #000000;
+	padding: 30px 0 0 0px;
 }
 .footer-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 30px;
   color: #f2f2f2;
+}
+.footer-copy p{
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 19px;
 }
 
 .footer-column {
